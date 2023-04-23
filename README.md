@@ -1,5 +1,5 @@
 # JAVA-UniversityCourse
-projects made during object-oriented programming classes
+## projekty wykonane na zajęciach z programowania obiektowego w języku JAVA
 
 # KLASA I OBIEKT - lab1
 ### Zadanie 1
