@@ -1,7 +1,7 @@
 # JAVA-UniversityCourse
 ## projekty wykonane na zajęciach z programowania obiektowego w języku JAVA
 
-# KLASA I OBIEKT - lab1
+# 1. KLASA I OBIEKT
 ### Zadanie 1
 Zdefiniuj klasę Point posiadającą dwa publiczne, ostateczne pola x, y. Napisz konstruktor ustawiający te wartości.
 Zdefiniuj klasę Line reprezentującą odcinek, posiadającą dwa prywatne punkty klasy Point. Wygeneruj akcesory i mutatory klasy Line. Napisz publiczną metodę, która zwraca długość odcinka. W kolejnym kroku usuń mutatory i utwórz konstruktor ustawiający te pola na wartości swoich dwóch parametrów.
@@ -16,7 +16,7 @@ Napisz funkcję (metodę klasy głównej), która przyjmie: obiekt l klasy Line 
 Zdefiniuj klasę Polygon posiadającą prywatną tablicę punktów. Konstruktor tej klasy powinien przyjmować liczbę wierzchołków. Napisz dwa mutatory wierzchołków: (1) przyjmujący indeks w tablicy i punkt, który ma zostać zastąpiony oraz (2) tablicę punktów. Napisz publiczną metodę toSvg() działającą analogicznie jak w poprzednim zadaniu.
 
 
-# PARADYGMATY PROGRAMOWANIA OBIEKTOWEGO - lab2
+# 2. PARADYGMATY PROGRAMOWANIA OBIEKTOWEGO
 ### Zadanie 1
 Zdefiniuj klasę Style o finalnych, publicznych polach klasy String: fillColor, strokeColor oraz Double: strokeWidth. Napisz konstruktor trójargumentowy ustawiający te wartości. Należy dopuścić ustawienie polom wartości null. Napisz publiczną metodę toSvg() zwracającą napis, który można umieścić w opcji style tagu <polygon>.
 
@@ -40,7 +40,7 @@ Napisz klasę Ellipse dziedziczącą po Shape, posiadającą prywatne pola: śro
 Zmodyfikuj klasę SvgScene, aby posiadała tablicę obiektów klasy Shape i korzystając z polimorfizmu zapisz w niej obiekty typu Polygon i Ellipse.
 
 
-# WZORCE PROJEKTOWE - lab3
+# 3. WZORCE PROJEKTOWE
 
 Pobierz, rozpakuj i uruchom projekt początkowy. Przeanalizuj zmiany, jakie zostały poczynione względem programu napisanego na poprzednich zajęciach:
  - konstruktor klasy Polygon ustawia tablicę wierzchołków,
@@ -130,7 +130,7 @@ W metodzie toSvg klasy zewnętrznej wykorzystaj sformatowany napis:
 
 Rozważ, jakie modyfikacje należałoby poczynić w programie wynikowym, aby możliwa była rezygnacja z singletonowej postaci klasy SvgScene.
 
-# PLIKI, NAPISY, SERIALIZACJA - lab4
+# 4. PLIKI, NAPISY, SERIALIZACJA
 
 ### Zadanie 1
 Zdefiniuj klasę Person posiadającą prywatne pola name klasy String oraz birth, death klasy LocalDate. Utwórz w niej metodę fabrykującą fromFile, tworzącą obiekt na podstawie pliku o ścieżce danej argumentem. Plik powinien zawierać w kolejnych liniach: imię i nazwisko; datę urodzenia; (opcjonalnie) datę śmierci. Daty podawane są w formacie dd.MM.yyyy. Nadpisz metodę toString. Zagwarantuj, aby metoda fromFile była jedynym sposobem utworzenia obiektu klasy Person.
@@ -167,7 +167,7 @@ Zdefiniuj klasę User, dziedziczącą po Person, z polami login i password. Napi
  - toEncryptedFile - przyjmującą tablicę obiektów User i ścieżkę do pliku. Metoda powinna umieścić w pliku dane z tablicy w postaci binarnej, ale zaszyfrowane dowolną metodą, w których kluczem będzie "password",
  - fromEncryptedFile - przyjmującą ścieżkę do pliku binarnego, zwracającą tablicę obiektów User. Metoda powinna odczytać plik stworzony przez metodę toEncryptedFile.
 
-# WYJĄTKI - lab5
+# 5. WYJĄTKI 
 
 ### Zadanie 1
 
@@ -211,7 +211,7 @@ Rozważ sytuacje, w których:
  - w pliku rodzica znajduje się dziecko, które nie podaje go jako swojego rodzica.
 Zdefiniuj wyjątki ParentNotReferencingChildException oraz ChildNotReferencingParentException rzucane przez metodę DirectoryPersonPersistenceManager::load. Wyjątki te powinny dziedziczyć po klasie ParentChildInconsistencyException, której wyjątek należy przechwycić.
 
-# STRUMIENIE - lab6
+# 6. STRUMIENIE
 
 ### Zadanie 1
 
@@ -250,7 +250,7 @@ Zmodyfikuj wywołanie funkcjonalności "ls" tak, aby można było go wywołać z
 
 Jeżeli opcje filter i color zostaną użyte jednocześnie, podciąg z filtra powinien być w nazwach plików i katalogów wyróżniony kolorem czerwonym.
 
-# PROGRAMOWANIE GENERYCZNE - lab7
+# 7. PROGRAMOWANIE GENERYCZNE
 
 ### Zadanie 1
 
@@ -293,7 +293,7 @@ Korzystając z niego napisz metodę statyczną, która dla listy oraz granic zak
 
 Napisz komparator, który porówna dwie kolekcje pod względem liczby ich elementów. Następnie zmodyfikuj go tak, aby przyjmował wyłącznie kolekcje liczb i porównywał je pod względem ich sumy.
 
-# POWTÓRZENIE_1 - lab8
+# 8. POWTÓRZENIE_1 
 
 Dany jest plik CSV zawierający statystykę zgonów w Polsce w 2019 roku z podziałem na grupy wiekowe i przyczyny. Przyczyny są zapisane w pierwszej kolumnie z użyciem kodu ICD-10. Druga kolumna zawiera sumaryczną liczbę zgonów z podanej przyczyny, a kolejne kolumny - liczby zgonów w przedziałach wiekowych opisanych w nagłówku.
 
@@ -333,7 +333,7 @@ Klasa ICDCodeTabularOptimizedForTime powinna jednorazowo załadować wszystkie k
 
 Klasa ICDCodeTabularOptimizedForMemory nie powinna przetrzymywać danych w pamięci operacyjnej, ale za każdym wywołaniem metody getDescription powinna otwierać plik i wyszukiwać w nim opisu.
 
-# TESTY - lab9
+# 9. TESTY 
 
 ### Zadanie 1a
 Wydziel metodę obliczającą indeks tablicy na podstawie miesiąca i daty do statycznej, publicznej metody w klasie Product.
@@ -377,7 +377,7 @@ Napisz test sprawdzający odczytywanie prefiksu w metodzie Product::getProduct p
 ### Zadanie 3b
 Napisz fabrykę dynamicznych testów, które przetestują poprawność działania metody Product::getProduct dla wszystkich wygenerowanych plików.
 
-# APLIKACJE SIECIOWE - lab10
+# 10. APLIKACJE SIECIOWE 
 
 ### Zadanie 1
 Napisz serwer czatu sieciowego. Serwer powinien pozwolić dołączyć dowolnej liczbie użytkowników. Serwer powinien oczekiwać na wiadomość od dowolnego użytkownika i rozsyłać tę wiadomość wszystkim użytkownikom.
@@ -400,7 +400,7 @@ Jeżeli użytkownik napisze w czacie “/w recipient message”, gdzie recipient
 ### Zadanie 5
 Jeżeli użytkownik napisze w czacie “/file recipient path", gdzie recipient jest loginem odbiorcy, a path ścieżką do pliku, należy przesłać ten plik odbiorcy. Podczas przesyłania należy prezentować aktualny, procentowy, postęp kopiowania. Jeżeli odbiorca nie jest zalogowany, należy wyświetlić nadawcy stosowną informację.
 
-# GRAFICZNY INTERFEJS UŻYTKOWNIKA - lab11
+# 11. GRAFICZNY INTERFEJS UŻYTKOWNIKA
 
 ### Zadanie 1
 Zaprojektuj okno czatu w którym będzie znajdowały obiekty klas:
@@ -425,7 +425,7 @@ Obsłuż wyświetlanie listy użytkowników. Podczas logowania klient powinien p
 ### Zadanie 5
 Do głównego okna dodaj obiekt klasy ProgressBar. Zaprogramuj przycisk wysyłania pliku, jak aby otwierał dialog wyboru plików. Zaprogramuj przesyłanie pliku aktywnemu użytkownikowi z listy. Postęp przesyłania należy wyświetlić w kliencie otrzymującym plik.
 
-# GRA - lab12
+# 12. GRA
 ## Zadanie: Napisz grę zbliżoną do Breakout.
 
 ### Krok 1
@@ -478,7 +478,7 @@ W klasie Brick zdefiniuj publiczny typ wyliczeniowy CrushType {NoCrush, Horizont
 ### Krok 8
 W klasie Ball napisz metodę bounceFromPaddle, która przyjmie zmiennoprzecinkowy parametr. Parametr ten powinien być proporcjonalny do odległości pozycji uderzenia piłki od środka platformy i powinien posłużyć do obliczenia zmodyfikowanego wektora ruchu tak, aby uderzenie bliżej końców powodowało ruch pod większym kątem.
 
-# BAZY DANYCH - lab13
+# 13. BAZY DANYCH
 Utwórz bazę SQLite składającą się z pojedynczej tabeli:
 CREATE TABLE person (
 id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -513,7 +513,7 @@ Do utworzonego projektu dodaj klasy DatabaseConnection i Person. Zmodyfikuj stro
 ### Zadanie 7
 Do strony dodaj formularz składający się z dwóch pól: imię i nazwisko oraz przycisku. Po naciśnięciu przycisku dane z formularza należy dodać jako kolejny wiersz do tabeli w bazie i wyświetlić na stronie.
 
-# POWTÓRZENIE_2 - lab14
+# 14. POWTÓRZENIE_2
 ### Zadanie 1
 Zaznajom się z dołączonym plikiem app-view.fxml. Zaprogramuj funkcjonalność rysowania kół wewnątrz stworzonej kanwy. Koła powinny być tworzone po kliknięciu myszą w obszarze kanwy. Środek koła powinien być w miejscu kliknięcia. Kolor wypełnienia i promień należy ustawić na podstawie odczytów ze stosownych kontrolek na interfejsie.
 
