@@ -1,6 +1,7 @@
 # JAVA-UniversityCourse
 ## projekty wykonane na zajęciach z programowania obiektowego w języku JAVA
 
+
 # 1. KLASA I OBIEKT
 ### Zadanie 1
 Zdefiniuj klasę Point posiadającą dwa publiczne, ostateczne pola x, y. Napisz konstruktor ustawiający te wartości.
