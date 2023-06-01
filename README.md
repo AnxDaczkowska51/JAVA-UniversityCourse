@@ -205,7 +205,7 @@ Zmodyfikuj pliki tekstowe, aby pod dotychczasowymi liniami warunkowo znalazł si
 
 Rozważ sytuację, w której rodzic lub dziecko zawiera imię i nazwisko osoby nie występującej w plikach. Napisz wyjątek UndefinedPersonReferenceException posiadający dwie metody: zwracającą plik, w którym doszło do błędu oraz zwracający imię i nazwisko osoby powodującej ten błąd.
 
-###Zadanie 8
+### Zadanie 8
 
 Rozważ sytuacje, w których:
  - w pliku dziecka znajduje się rodzic, który nie posiada w swoim pliku tego dziecka,
